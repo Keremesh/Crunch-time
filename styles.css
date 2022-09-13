@@ -1,0 +1,168 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #ec312e;
+  /* z-index: 1; */
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: jeff-script, sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  color: #f0c808;
+}
+
+p {
+  font-family: "Quattrocento", sans-serif;
+  color: #fff1d0;
+}
+
+.headers {
+  font-family: "Amatic SC", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/*Top section*/
+
+.title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#logo {
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.logo-area {
+  /* background-color: white; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* About section */
+.about {
+  text-align: center;
+}
+
+/* Characters */
+
+/* .characters-list {
+} */
+
+.character {
+  width: 50px;
+  height: 50px;
+}
+
+/* Eating habbits*/
+
+/* .eating {
+  display: block;
+  
+} */
+.foxie-divider {
+  display: block;
+  width: 30%;
+  height: auto;
+  padding-top: 3 rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Learn more */
+
+#bluecat {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.learn-more {
+  background-color: #106ab3;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.learn-more h3 {
+  color: #fff1d0;
+}
+.learn-more h3 a {
+  color: #449d44;
+}
+
+/* Footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  clear: both;
+  padding-top: 20px;
+  background-color: #086788;
+}
+.footer p {
+  padding-left: 20px;
+  color: #fff1d0;
+}
+.footer p a {
+  color: #f0c808;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* .btn-success {
+  background-color: #449d44;
+  border-color: #449d44; }
+  .btn-success:hover {
+    background-color: #398439;
+    border-color: #398439; } */
+
+/* .btn:focus,
+a:focus {
+  outline: none !important;
+} */
