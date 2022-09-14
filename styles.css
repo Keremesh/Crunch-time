@@ -1,15 +1,12 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+@import url("");
 
 html {
   position: relative;
   min-height: 100%;
   background-color: #ec312e;
   /* z-index: 1; */
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -19,19 +16,21 @@ body {
 }
 
 h1 {
-  font-family: jeff-script, sans-serif;
+  font-family: "Caveat", cursive;
+  font-size: 4rem;
+  color: white;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-  color: #f0c808;
+  font-family: "Comfortaa", cursive;
+  color: #F2DC5D;
 }
 
 p {
-  font-family: "Quattrocento", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #fff1d0;
 }
 
@@ -39,7 +38,12 @@ p {
   font-family: "Amatic SC", cursive;
   font-size: 3rem;
   text-align: center;
+  color: #EDADC7;
+  padding: 2rem;
+  
 }
+
+
 
 /*Top section*/
 
@@ -67,35 +71,44 @@ p {
   text-align: center;
 }
 
+.about h4 {
+  padding-bottom:3rem;
+}
+
 /* Characters */
 
-/* .characters-list {
-} */
+.characters-list {
+  padding-right: 1rem;
+  padding-left: 1rem;
+} 
 
 .character {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 120px;
 }
 
 /* Eating habbits*/
 
 /* .eating {
-  display: block;
-  
+  padding-bottom: 2rem;
 } */
-.foxie-divider {
-  display: block;
-  width: 30%;
-  height: auto;
-  padding-top: 3 rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.foxie-divider {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#foxie {
+  width: 40%;  
+  height: auto; 
+  padding-top: 3rem;
+  padding-bottom: 3rem; 
 }
 
 /* Learn more */
@@ -117,42 +130,55 @@ iframe {
   color: #fff1d0;
 }
 .learn-more h3 a {
-  color: #449d44;
+  color: #F2DC5D;
 }
 
 /* Footer */
-.footer {
+/* footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
-}
-.footer {
-  position: relative;
-  bottom: 0;
+} */
+footer {
+  /* position: relative; */
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  clear: both;
-  padding-top: 20px;
-  background-color: #086788;
+  height: 3rem;
+  padding: 2rem;
+  
 }
-.footer p {
+
+footer p {
   padding-left: 20px;
-  color: #fff1d0;
+  color: #EDADC7;
+  font-family:"Amatic SC", cursive;
+  font-size: 2rem;
 }
-.footer p a {
+footer p a {
   color: #f0c808;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+  .about,
+  .characters-list,
+  footer {
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .about,
+  .characters-list,
+  footer {
+  
+  padding-right: 1rem;
+  padding-left: 1rem;
+  }
+  .foxie-divider
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* .btn-success {
