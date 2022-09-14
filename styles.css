@@ -78,6 +78,7 @@ p {
 /* Characters */
 
 .characters-list {
+  
   padding-right: 1rem;
   padding-left: 1rem;
 } 
@@ -85,6 +86,26 @@ p {
 .character {
   width: 100px;
   height: 120px;
+  max-width: 80%;
+}
+figure {
+  
+  display:block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  /* max-width: 80%; */
+
+} 
+
+.photo {
+  /* max-width: 150px; */
+  display: block;
+  
+  margin: 0 auto;
+  width: 150px;
+  height: 200px;
 }
 
 /* Eating habbits*/
@@ -96,6 +117,7 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .foxie-divider {
@@ -168,17 +190,40 @@ footer p a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about,
   .characters-list,
   footer {
   
   padding-right: 1rem;
   padding-left: 1rem;
+ 
   }
-  .foxie-divider
+  .foxie-divider {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+  .character {
+    width: 90%;
+    height: auto; 
+    justify-items: center;
+
+    
+  }
+  
+  figure {
+    display:inline-block;
+    text-align:center;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px; */
+  }
+  /* .characters-list img{
+    display: inline-block;
+    vertical-align: top; */
+
+  }
 }
 
 /* .btn-success {
